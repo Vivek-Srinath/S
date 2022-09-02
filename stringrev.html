@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input id="a" />
+        <button onclick="reverse()">check</button>
+        <div id="c"> </div>
+    </div>
+    <script>
+        var a;
+        var b;
+        function reverse() {
+            var a = document.getElementById("a")
+            a = a.value
+            b = a.split('').reverse().join('')
+            document.getElementById('c').innerHTML = b
+            console.log(b)
+        }
+        
+
+    </script>
+</body>
+
+</html>
